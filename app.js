@@ -100,7 +100,7 @@ app.use((req, res, next) => {
 //   res.send(registerUser);
 // });
 
-app.use("/listings", listingRouter);
+app.use("/", listingRouter);
 app.use("/listings/:id/reviews", reviewsRouter);
 app.use("/", userRouter);
 
